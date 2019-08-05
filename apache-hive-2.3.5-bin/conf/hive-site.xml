@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+<configuration>
+         <property>
+	     <name>hive.metastore.schema.verification</name>
+	         <value>true</value>
+		         </property>
+
+			  <property>
+			  <name>hive.exec.scratchdir</name>
+			      <value>/tmp/hive</value>
+			          <description>HDFS root scratch dir for Hive jobs which gets created with write all (733) permission. For each connecting user, an HDFS scratch dir: ${hive.exec.scratchdir}/&lt;username&gt; is created, with ${hive.scratch.dir.permission}.</description>
+				    </property>
+
+ <property>
+     <name>hive.exec.local.scratchdir</name>
+         <value>/tmp/${user.name}</value>
+	     <description>Local scratch space for Hive jobs</description>
+	       </property>
+
+
+<property>
+    <name>hive.downloaded.resources.dir</name>
+        <value>/tmp/${user.name}_resources</value>
+ <description>Temporary local directory for added resources in the remote file system.</description>
+	      </property>
+	       <property>
+	               <name>hive.metastore.local</name>
+		               <value>false</value>
+			        </property>
+				<property>
+				        <name>hive.scratch.dir.permission</name>
+					        <value>733</value>
+					</property>
+
+					<property>
+					    <name>javax.jdo.option.ConnectionURL</name>
+		<value>jdbc:mysql://localhost:3306/hive?createDatabaseIfNotExist=true</value>
+  <description>The permission for the user specific scratch directories that get created.</description>
+						      </property>
+
+						<property>
+			 <name>javax.jdo.option.ConnectionDriverName</name>
+			      <value>com.mysql.jdbc.Driver</value>
+								</property>
+
+<property>
+        <name>javax.jdo.option.ConnectionUserName</name>
+	        <value>hive</value>
+		</property>
+
+<property>
+        <name>javax.jdo.option.ConnectionPassword</name>
+	        <value>test00</value>
+		</property>
+		</configuration>
