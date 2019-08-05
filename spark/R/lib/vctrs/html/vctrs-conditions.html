@@ -1,0 +1,61 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><title>R: Custom conditions for vctrs package</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body>
+
+<table width="100%" summary="page for vctrs-conditions {vctrs}"><tr><td>vctrs-conditions {vctrs}</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Custom conditions for vctrs package</h2>
+
+<h3>Description</h3>
+
+<p>These errors and warnings have custom classes and structures to make
+testing easier.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre>
+stop_incompatible_type(x, y, details = NULL, ..., message = NULL,
+  .subclass = NULL)
+
+stop_incompatible_cast(x, y, details = NULL, ..., message = NULL,
+  .subclass = NULL)
+
+stop_incompatible_op(op, x, y, details = NULL, ..., message = NULL,
+  .subclass = NULL)
+
+warn_lossy_cast(x, y, locations = NULL, details = NULL, ...,
+  message = NULL, .subclass = NULL)
+</pre>
+
+
+<h3>Arguments</h3>
+
+<table summary="R argblock">
+<tr valign="top"><td><code>x, y</code></td>
+<td>
+<p>Vectors</p>
+</td></tr>
+<tr valign="top"><td><code>details</code></td>
+<td>
+<p>Any additional human readable details</p>
+</td></tr>
+<tr valign="top"><td><code>..., message, .subclass</code></td>
+<td>
+<p>Only use these fields when creating a subclass.</p>
+</td></tr>
+<tr valign="top"><td><code>locations</code></td>
+<td>
+<p>For <code>warn_lossy_cast()</code>, an optional vector giving the
+locations where <code>x</code> lost information.</p>
+</td></tr>
+<tr valign="top"><td><code>subclass</code></td>
+<td>
+<p>Use if you want to further customise the class</p>
+</td></tr>
+</table>
+
+<hr /><div style="text-align: center;">[Package <em>vctrs</em> version 0.1.0 <a href="00Index.html">Index</a>]</div>
+</body></html>

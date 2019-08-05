@@ -1,0 +1,49 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><title>R: Extract underlying data</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body>
+
+<table width="100%" summary="page for vec_data {vctrs}"><tr><td>vec_data {vctrs}</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Extract underlying data</h2>
+
+<h3>Description</h3>
+
+<p>Extract the data underlying an S3 vector object, i.e. the underlying
+atomic vector or list. Currently, due to the underlying memory architecture
+of R, this creates a full copy of the underlying data.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre>
+vec_data(x)
+</pre>
+
+
+<h3>Arguments</h3>
+
+<table summary="R argblock">
+<tr valign="top"><td><code>x</code></td>
+<td>
+<p>A vector</p>
+</td></tr>
+</table>
+
+
+<h3>Value</h3>
+
+<p>The data underlying <code>x</code>, free from an attributes.
+</p>
+
+
+<h3>See Also</h3>
+
+<p>See <code><a href="vec_cast.html">vec_restore()</a></code> for the inverse operation: it restores
+attributes given a bare vector and a prototype;
+<code>vec_restore(vec_data(x), x)</code> will always yield <code>x</code>.
+</p>
+
+<hr /><div style="text-align: center;">[Package <em>vctrs</em> version 0.1.0 <a href="00Index.html">Index</a>]</div>
+</body></html>

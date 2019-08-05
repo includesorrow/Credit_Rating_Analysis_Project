@@ -1,0 +1,65 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><title>R: Vector dimensions</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body>
+
+<table width="100%" summary="page for dims {vctrs}"><tr><td>dims {vctrs}</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Vector dimensions</h2>
+
+<h3>Description</h3>
+
+
+<ul>
+<li> <p><code>vec_empty()</code> returns <code>TRUE</code> if <code>vec_size()</code> is zero.
+</p>
+</li>
+<li> <p><code>vec_dims()</code> gives the dimensionality (i.e. number of dimensions)
+</p>
+</li>
+<li> <p><code>vec_dim()</code> returns the size of each dimension
+</p>
+</li></ul>
+
+
+
+<h3>Usage</h3>
+
+<pre>
+vec_empty(x)
+
+vec_dim(x)
+
+vec_dims(x)
+</pre>
+
+
+<h3>Arguments</h3>
+
+<table summary="R argblock">
+<tr valign="top"><td><code>x</code></td>
+<td>
+<p>A vector</p>
+</td></tr>
+</table>
+
+
+<h3>Details</h3>
+
+<p>Unlike base R, we treat vectors with <code>NULL</code> dimensions as 1d. This
+simplifies the type system by eliding a special case. Compared to base R
+equivalent, <code>vec_dim()</code> returns <code>length()</code>, not <code>NULL</code>, when <code>x</code> is 1d.
+</p>
+
+
+<h3>Examples</h3>
+
+<pre>
+# Compared to base R
+x &lt;- 1:5
+dim(x)
+vec_dim(x)
+</pre>
+
+<hr /><div style="text-align: center;">[Package <em>vctrs</em> version 0.1.0 <a href="00Index.html">Index</a>]</div>
+</body></html>

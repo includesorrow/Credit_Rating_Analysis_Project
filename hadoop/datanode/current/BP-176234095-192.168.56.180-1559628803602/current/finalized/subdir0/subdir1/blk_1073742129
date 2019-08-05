@@ -1,0 +1,1 @@
+PjobId=job_1560472599224_0001,submitTime=1560473159767,launchTime=1560473173712,firstMapTaskLaunchTime=1560473176332,firstReduceTaskLaunchTime=0,finishTime=1560473183868,resourcesPerMap=1024,resourcesPerReduce=0,numMaps=1,numReduces=0,user=root,queue=default,status=SUCCEEDED,mapSlotSeconds=7,reduceSlotSeconds=0,jobName=jeju_finance.jar
