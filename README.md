@@ -30,7 +30,7 @@
   Flume, Hive, Spark 소개 및 아키텍처
   Hadoop과 Spark의 차이
   
-- 해당 PPT : 링크![링크]
+- 해당 PPT : 링크(https://github.com/includesorrow/Credit_Rating_Analysis_Project/files/3728951/%2B.Flume%2BHive%2BSpark._.pptx)
 
 
 
