@@ -19,6 +19,19 @@
 ![Spark](https://img.shields.io/badge/-Spark-orange)
 ![Hadoop](https://img.shields.io/badge/-Hadoop-yellowgreen)
 
+## Hadoop Eco-system에 대한 PPT 작성
+
+- Hadoop Eco-system에 대해 학습한 내용을 바탕으로 PPT를 직접 만들었으며, 해당 PPT를 바탕으로 약 1시간동안 한국소프트웨어진흥협회에서 발표 및 질의응답까지 진행하였습니다. 
+
+- PPT 내용 요약 :
+  하둡에 대한 이해
+  HDFS, MapReduce 아키텍쳐
+  하둡 1.X과 2.X의 차이
+  Flume, Hive, Spark 소개 및 아키텍처
+  Hadoop과 Spark의 차이
+  
+- 해당 PPT : 링크![링크]
+
 
 
 
